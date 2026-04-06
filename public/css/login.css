@@ -1,0 +1,81 @@
+/* login.css */
+:root {
+    --primary-color: #d90429;   /* rojo principal */
+    --secondary-color: #9b0202; /* rojo oscuro */
+}
+
+body {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.login-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.login-logo {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.login-body {
+    padding: 30px;
+}
+
+.login-footer {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Form styles */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(217, 4, 41, 0.25);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    padding: 10px;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .login-body {
+        padding: 20px;
+    }
+
+    .login-header {
+        padding: 20px;
+    }
+}
