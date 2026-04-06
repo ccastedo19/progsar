@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/login.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+
+    
 </head>
 <body>
     <div class="login-container">
